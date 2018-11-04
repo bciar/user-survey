@@ -1,0 +1,123 @@
+@import '../../_mixins';
+
+.either-or-container {
+  @include flexbox(column, center);
+}
+
+.either-or-wrapper {
+  @include flexbox(column, center);
+  flex-wrap: wrap;
+}
+
+.question {
+  .either-or-choices-wrapper {
+    .either-or:nth-child(1),
+    .either-or:nth-child(2) {
+      margin: 3px 5px 24px;
+    }
+
+    .either-or:nth-child(3),
+    .either-or:nth-child(5) {
+      margin: 24px 5px 3px;
+    }
+  }
+}
+
+.question {
+  .either-or-choices-wrapper {
+    @include flexbox(row, center);
+    .either-or {
+      display: inline-block;
+      input {
+        border: 0 !important;
+        clip: rect(0 0 0 0) !important;
+        height: 1px !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        position: absolute !important;
+        width: 1px !important;
+      }
+      .either-or-unchecked {
+        background: rgba(255, 255, 255, 0.17);
+        font-size: 20px;
+      }
+      .either-or-checked {
+        background: #75CC43;
+        color: #fff;
+        font-size: 24px;
+      }
+      .either-or-text {
+        @include flexbox(column, center);
+        width: 392px;
+        height: 96px;
+        cursor: pointer;
+        font-size: 22px;
+        line-height: 24px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin: 0 auto;
+        padding: 10px;
+        &:hover {
+          box-shadow: 0 0 25px #fff;
+          -moz-transform: scale(1.05);
+          -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+          transition: all .3s;
+        }
+      }
+    }
+    .either-or-divider {
+      margin: 30px;
+      color: #9B9B9B;
+    }
+  }
+}
+
+.radio-error {
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 780px) {
+  .either-or-text {
+    font-size: 24px;
+    line-height: 26px;
+    display: inline-block;
+  }
+
+  .either-or-image-wrapper {
+    width: 46%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .either-or-wrapper {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .question {
+    .either-or-container {
+      hr {
+        border: solid 1px #9B9B9B;
+        width: 127px;
+        margin-top: 6px;
+        margin-bottom: 15px;
+      }
+      .either-or-choices-wrapper {
+        @include flexbox(column, center);
+        padding: 10px!important;
+        .either-or:nth-child(1),
+        .either-or:nth-child(2) {
+          margin: 3px 5px 12px;
+        }
+        .either-or-text {
+          width: 90%!important;
+          height: auto!important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import '../../mixins';
+
+.feedback {
+  @include flexbox(row, center);
+  padding: 100px;
+  .card {
+    padding: 40px 100px 30px 40px;
+    justify-content: flex-start;
+    .question {
+      margin: 20px 0;
+      h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        font-size: 20px;
+      }
+      h4 {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: normal;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+.user-data {
+  .radio-buttons {
+    @include flexbox(column, flex-start);
+    text-align: left;
+    margin: 20px 0;
+    width: 85%;
+    .radio-buttons-wrapper {
+      @include flexbox(row, center, flex-start);
+      .radio-button {
+        .radio-button-text {
+          height: 60px;
+          width: 160px;
+          font-size: 16px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+.feedback-rating {
+  .radio-buttons {
+    @include flexbox(row, flex-start, flex-start);
+    text-align: left;
+    margin: 20px 0;
+    .radio-buttons-wrapper {
+      @include flexbox(row, flex-start);
+      .radio-button {
+        margin: 0px;
+        .radio-button-text {
+          height: 32px;
+          width: 44px;
+          font-size: 16px;
+          margin: 0px;
+          border-radius: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback {
+    padding:10px!important;
+  }
+}

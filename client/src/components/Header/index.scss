@@ -1,0 +1,20 @@
+@import '../../_mixins';
+
+.header {
+  @include flexbox(row, center);
+  margin: 40px 0 20px;
+  text-align: center;
+  width: 100%;
+  .logo {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .header {
+    width: 50%;
+    .logo {
+      width: 20%;
+    }
+  }
+}

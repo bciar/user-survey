@@ -1,0 +1,112 @@
+@import '../../_mixins';
+
+.card {
+  @include flexbox(column, center);
+  margin-bottom: auto;
+  padding: 30px;
+  color: #333;
+  background: #fff;
+  box-shadow: 0px 12px 14px rgba(0, 0, 0, 0.22);
+  border-radius: 15px;
+}
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.card-animated-backward {
+  animation: slideInLeft 0.85s ease-in;
+}
+.card-animated-forward {
+  animation: slideInRight 0.85s ease-in;
+}
+
+.card-animated {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+}
+
+.card-animated {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+}
+
+.card-default {
+  width: 1040px;
+  height: 560px;
+}
+
+.card-narrow {
+  width: 344px;
+  height: auto;
+}
+
+.card-tall {
+  width: 1040px;
+  height: 630px;
+}
+
+.card-large {
+  width: 1168px;
+  height: 706px;
+}
+
+.card-huge {
+  width: 1168px;
+  height: 846px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%!important;
+    height: auto!important;
+  }
+}

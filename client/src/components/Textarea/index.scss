@@ -1,0 +1,20 @@
+@import '../../_mixins';
+
+.textarea-wrapper {
+  @include flexbox(column, center);
+  margin: 20px;
+  textarea {
+    height: 250px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Hind', 'Helvetica', sans-serif;
+    padding: 14px;
+  }
+}

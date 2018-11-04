@@ -1,0 +1,55 @@
+@import '../../colors';
+@import '../../mixins';
+
+button {
+  padding: 10px 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px 0px;
+  display: block;
+  &:hover {
+    transition: all .3s;
+  }
+}
+
+.button-back {
+  background-color: #fff;
+  border: 1px solid $light-green;
+  color: $light-green;
+  a {
+    color: $light-green;
+  }
+  &:hover {
+    background-color: $light-green;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+}
+
+.button-next {
+  background-color: $light-green;
+  border: 1px solid #fff;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+  &:hover {
+    background-color: #fff;
+    border: 1px solid $light-green;
+    color: $light-green;
+  }
+}
+
+.survey-button-wrapper {
+  @include flexbox(row, center);
+  button {
+    margin: 20px;
+  }
+}
+
+.button-inactive {
+  pointer-events: none;
+}
+

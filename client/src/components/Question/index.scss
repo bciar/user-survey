@@ -1,0 +1,123 @@
+@import '../../_mixins';
+
+input:checked + label > img {
+  box-shadow: 0 0 25px #fff;
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all .3s;
+}
+
+.question form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 780px) {
+  input {
+    width: 520px;
+  }
+}
+
+.question-label-style {
+  width: 100%;
+}
+
+.question-image-style {
+  margin: 0 20px;
+}
+
+.question-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-wrapper-inner {
+  text-align: center;
+}
+
+.character-count {
+  display: block;
+  padding: 2px;
+  color: #333;
+}
+
+.checkbox-wrapper, .radio-buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkboxes, .radio-button {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-message {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  background-color: #d80017;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.question {
+  .radio-button {
+    flex-direction: column;
+    input[type="radio"] {
+      width: 60px;
+      height: 20px;
+      margin: 10px 0 15px;
+    }
+    label {
+      margin: 10px;
+    }
+  }
+}
+
+.question input[type="checkbox"] {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+@media only screen and (min-width: 780px) {
+  .question input {
+    width: 472px;
+  }
+  .question-audience-sex,
+  .question-audience-income {
+    width: 40%;
+  }
+  .checkboxes {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .multi-question-wrapper .question-audience-sex.question {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .drag-and-drop-wrapper {
+    width: 100%!important;
+    > div {
+      width: 100%!important;
+    }
+  }
+}

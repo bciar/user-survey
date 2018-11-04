@@ -1,0 +1,85 @@
+{
+  "TW": {
+    "messages": [
+      "I'm a team player! I enjoy collaborating with others to create better outcomes together.",
+      "I enjoy working with others, but also appreciate working solo to accomplish my goals.",
+      "I work best on my own to accomplish my goals and find that others slow me down"
+    ] 
+  },
+  "CM": {
+  "messages": [
+      "I approach conflict head on and try to bring everyone onto the same page. When someone needs a mediator, they call me!",
+      "I work to resolve conflict if pushed, but avoid it if I can. ",
+      "I prefer to keep to myself and avoid conflict."
+    ]
+  },
+  "CO": {
+  "messages": [
+      "I enjoy helping others to learn and develop.",
+      "I support others when needed, but don’t offer assistance without prompting.",
+      "I'm not really the mentoring type. I prefer to concentrate on myself and my own accomplishments."
+    ]
+  },
+  "SO": {
+  "messages": [
+      "I'm in tune with others and understand how they feel.",
+      "At times I understand others’ emotions, but sometimes I'm not sure how others feel.",
+      "Sometimes I struggle to understand how others feel."
+    ]
+  },
+  "AO": {
+  "messages": [
+      "I'm always trying to be the best I can be!",
+      "I set goals when needed, but don’t feel the need to always try to improve.",
+      "I feel comfortable with myself and don’t feel the need to constantly strive for more."
+    ]
+  },
+  "AD": {
+  "messages": [
+      "I enjoy change and can go with the flow with ease!",
+      "I can adapt when changes are needed, but also enjoy when things stay the same and I can get into a routine.",
+      "I'm not a fan of change, and prefer to stick with a steady routine."
+    ]
+  },
+  "GR": {
+  "messages": [
+      "I push through to accomplish my goals, no matter what life throws at me! I'm well-suited to work on long-term goals.",
+      "I see things through if I can, but sometimes a difficult situation leads me to change my goals.",
+      "Sometimes I prefer short-term goals and can be easily distracted."
+    ]
+  },
+  "SA": {
+  "messages": [
+      "I'm in touch with my thoughts and emotions.",
+      "I usually have a good handle on how I'm feeling and what’s going through my mind.",
+      "I find that I'm not really in touch with how I feel at times."
+    ]
+  },
+  "PA": {
+  "messages": [
+      "I recognize that a positive attitude brings success and happiness! I see the good first and am always looking toward the future.",
+      "I'm cautiously optimistic about the future.",
+      "I remember the past as some of the best times of my life, and am not sure if things will ever be that good again."
+    ]
+  },
+  "SC": {
+  "messages": [
+      "I'm as cool as a cucumber! I can control myself even in difficult times.",
+      "I find that I often can maintain my composure, but sometimes my emotions get the best of me.",
+      "I find that at times I'm impulsive and react before I consider the consequences."
+    ]
+  },
+  "PR": {
+  "messages": [
+      "Having high integrity is of great importance to me.",
+      "Most of the time, I present my best image.",
+      "I am not overly concerned with how I come across in my work and image."
+    ]
+  },
+  "LP": {
+  "messages": [
+      "I see the opportunity to motivate and engage others through establishing a shared vision for the future. I trust others and understand that people are motivated intrinsically and my job is to support and encourage them, and they will seek to accomplish shared goals. ",
+      "I believe people need to be closely monitored and guided to succeed. I believe in the use of incentives to motivate others. I may be better suited to individual contributor than a leadership role, as I like to work independently."
+    ]
+  }
+}

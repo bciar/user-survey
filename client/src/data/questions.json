@@ -1,0 +1,779 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "component": "instructions",
+      "name": "Instructions 1",
+      "button": "Let's do it!",
+      "instructions": [
+        {
+          "id": 1,
+          "text": "OK, {name}, let's get started!"
+        },
+        {
+          "id": 2,
+          "text":
+            "In this first section, you'll be presented with two statements. Choose the statement you feel best represents you."
+        },
+        {
+          "id": 3,
+          "text":
+            "Remember, no wrong answers! If you get stuck, go with your gut!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "component": "combined",
+      "name": "EitherOr1",
+      "text": "Select the statement you agree with the most:",
+      "required": "true",
+      "requiredMessage": "Please select one of the two statements.",
+      "subQuestions": [
+        {
+          "id": 1,
+          "component": "input",
+          "type": "eitherOr",
+          "name": "1",
+          "autoContinue": "false",
+          "required": "true",
+          "requiredMessage": "Please select one of the two statements.",
+          "options": [
+            {
+              "category": "TW",
+              "description": "When working in a team, I encourage everyone’s participation"
+            },
+            {
+              "category": "CM",
+              "description": "I try to go along with others to avoid conflict"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "component": "input",
+          "type": "eitherOr",
+          "name": "2",
+          "autoContinue": "false",
+          "required": "true",
+          "requiredMessage": "Please select one of the two statements.",
+          "options": [
+            {
+              "category": "PA",
+              "description":
+                "I usually feel pretty good about what is to come in the future"
+            },
+            {
+              "category": "SC",
+              "description":
+                "I am a very expressive person. Everyone always knows what I am thinking."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "component": "combined",
+      "name": "EitherOr2",
+      "text": "Select the statement you agree with the most:",
+      "required": "true",
+      "requiredMessage": "Please select one of the two statements.",
+      "subQuestions": [
+        {
+          "id": 1,
+          "component": "input",
+          "type": "eitherOr",
+          "name": "EO3",
+          "autoContinue": "false",
+          "required": "true",
+          "requiredMessage": "Please select one of the two statements.",
+          "options": [
+            {
+              "category": "SA",
+              "description": "I often reflect on how I am feeling"
+            },
+            {
+              "category": "SO",
+              "description":
+                "I am always paying attention to what is going on around me"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "component": "input",
+          "type": "eitherOr",
+          "autoContinue": "false",
+          "required": "true",
+          "requiredMessage": "Please select one of the two statements.",
+          "options": [
+            {
+              "category": "SO",
+              "description": "I usually feel that I am “in tune” with others"
+            },
+            {
+              "category": "SA",
+              "description":
+                "I stay focused on what’s going on in my own head, and don’t worry so much about other distractions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "component": "combined",
+      "name": "EitherOr3",
+      "text": "Select the statement you agree with the most:",
+      "required": "true",
+      "requiredMessage": "Please select one of the two statements.",
+      "subQuestions": [
+        {
+          "id": 1,
+          "component": "input",
+          "type": "eitherOr",
+          "autoContinue": "false",
+          "required": "true",
+          "requiredMessage": "Please select one of the two statements.",
+          "options": [
+            {
+              "category": "PA",
+              "description":
+                "I am always looking forward to the future and believe the best is yet to come"
+            },
+            {
+              "category": "SC",
+              "description": "I usually feel like I am in control of my reactions"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "component": "input",
+          "type": "eitherOr",
+          "autoContinue": "false",
+          "required": "true",
+          "requiredMessage": "Please select one of the two statements.",
+          "options": [
+            {
+              "category": "AD",
+              "description":
+                "I don’t have a problem changing my priorities to deal with changing situations"
+            },
+            {
+              "category": "GR",
+              "description": "Even when presented with obstacles, I push through to get things done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "component": "instructions",
+      "name": "Instructions 2",
+      "instructions": [
+        {
+          "id": 1,
+          "text": "Well done!"
+        },
+        {
+          "id": 2,
+          "text":
+            "Now that you’re warmed up, we’re going to ask you some rapid-fire multiple choice questions"
+        },
+        {
+          "id": 3,
+          "text":
+            "Go with your first instinct.  These questions help illuminate your best “human” skills, so the more honest the answer, the better culture fit you’ll find"
+        },
+        {
+          "id": 4,
+          "text": "When you’re ready, hit NEXT and let’s go!"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "component": "combined",
+      "type": "likert",
+      "name": "Likert 1",
+      "subQuestions": [
+        {
+          "id": 1,
+          "component": "input",
+          "type": "likert",
+          "category": "TW",
+          "name": "TW1",
+          "text": "I am the person that encourages cooperation in a team",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 2,
+          "component": "input",
+          "type": "likert",
+          "category": "SO",
+          "name": "SO2",
+          "text":
+            "When someone close to me is upset, it does not affect me at all",
+          "reversed": "true",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 3,
+          "component": "input",
+          "type": "likert",
+          "category": "SO",
+          "name": "SO3",
+          "text":
+            "It is easy for me to figure out how someone is feeling, without them telling me",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 4,
+          "component": "input",
+          "type": "likert",
+          "category": "PA",
+          "name": "PA2",
+          "text": "I see good in the situation instead of bad.",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 5,
+          "component": "input",
+          "type": "likert",
+          "category": "AO",
+          "name": "AO1",
+          "text": "I try to improve myself",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "component": "combined",
+      "type": "likert",
+      "name": "Likert 2",
+      "subQuestions": [
+        {
+          "id": 1,
+          "component": "input",
+          "type": "likert",
+          "category": "AO",
+          "name": "AO3",
+          "text": "I strive to do a better job with whatever I do",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 2,
+          "component": "input",
+          "type": "likert",
+          "category": "GR",
+          "name": "GR2",
+          "text":
+            "I become obsessed with certain ideas or projects, but later lose interest",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 3,
+          "component": "input",
+          "type": "likert",
+          "category": "CM",
+          "name": "CM1",
+          "text":
+            "I try to resolve conflict by bringing everyone's concerns out into the open",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 4,
+          "component": "input",
+          "type": "likert",
+          "category": "PA",
+          "name": "PA1",
+          "text": "I see opportunities instead of focusing on problems",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 5,
+          "component": "input",
+          "type": "likert",
+          "category": "CM",
+          "name": "CM3",
+          "text":
+            "If someone disagrees with me, I change my perspective to agree with them",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "component": "combined",
+      "type": "likert",
+      "name": "Likert 3",
+      "subQuestions": [
+        {
+          "id": 1,
+          "component": "input",
+          "type": "likert",
+          "category": "CM",
+          "name": "CM2",
+          "text": "When conflicts arise, I avoid confrontation",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 2,
+          "component": "input",
+          "type": "likert",
+          "category": "SA",
+          "name": "SA2",
+          "text": "I get confused about how I am feeling",
+          "reversed": "true",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 3,
+          "component": "input",
+          "type": "likert",
+          "category": "SO",
+          "name": "SO1",
+          "text":
+            "I understand how others feel by imagining how I would feel in their shoes",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 4,
+          "component": "input",
+          "type": "likert",
+          "category": "CO",
+          "name": "CO1",
+          "text": "I offer others constructive feedback to help them develop",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 5,
+          "component": "input",
+          "type": "likert",
+          "category": "SC",
+          "name": "SC1",
+          "text": "I lose control when I am in a high-pressure situation",
+          "reversed": "true",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "component": "combined",
+      "type": "likert",
+      "name": "Likert 4",
+      "subQuestions": [
+        {
+          "id": 1,
+          "component": "input",
+          "type": "likert",
+          "category": "CO",
+          "name": "CO2",
+          "text": "I mentor others when I have the opportunity",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 2,
+          "component": "input",
+          "type": "likert",
+          "category": "AD",
+          "name": "AD1",
+          "text": "When the rules of the game change, I change as needed",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 3,
+          "component": "input",
+          "type": "likert",
+          "category": "TW",
+          "name": "TW2",
+          "text": "I support my team members",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 4,
+          "component": "input",
+          "type": "likert",
+          "category": "SC",
+          "name": "SC2",
+          "text": "I maintain my composure in difficult situations",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 5,
+          "component": "input",
+          "type": "likert",
+          "category": "GR",
+          "name": "GR4",
+          "text": "I finish whatever I begin even if I encounter challenges",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "component": "combined",
+      "type": "likert",
+      "name": "Likert 5",
+      "subQuestions": [
+        {
+          "id": 1,
+          "component": "input",
+          "type": "likert",
+          "category": "AD",
+          "name": "AD3",
+          "text": "I struggle when plans or goals change",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 2,
+          "component": "input",
+          "type": "likert",
+          "category": "SC",
+          "name": "SC4",
+          "text": "I act appropriately in stressful stituations",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 3,
+          "component": "input",
+          "type": "likert",
+          "category": "CO",
+          "name": "CO3",
+          "text": "I invest my own time to develop others",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 4,
+          "component": "input",
+          "type": "likert",
+          "category": "PR",
+          "name": "PR1",
+          "text":
+            "It is important to me to keep my appointments no matter what",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 5,
+          "component": "input",
+          "type": "likert",
+          "category": "GR",
+          "name": "GR1",
+          "text": "New ideas and projects distract me from previous ones",
+          "reversed": "true",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "component": "combined",
+      "type": "likert",
+      "name": "Likert 6",
+      "subQuestions": [
+        {
+          "id": 1,
+          "component": "input",
+          "type": "likert",
+          "category": "GR",
+          "name": "GR3",
+          "text":
+            "I decide to stop working on a project to work on a new project that interests me",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 2,
+          "component": "input",
+          "type": "likert",
+          "category": "SA",
+          "name": "SA1",
+          "text": "I know how my feelings affect my actions",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 3,
+          "component": "input",
+          "type": "likert",
+          "category": "AD",
+          "name": "AD2",
+          "text": "I change my strategy to fit the situations",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 4,
+          "component": "input",
+          "type": "likert",
+          "category": "SA",
+          "name": "SA3",
+          "text":
+            "There are times I become so focused on accomplishing my work, I don't notice other things",
+          "reversed": "true",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 5,
+          "component": "input",
+          "type": "likert",
+          "category": "AO",
+          "name": "AO2",
+          "text": "I set goals to accomplish things",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "component": "combined",
+      "type": "likert",
+      "name": "Likert 7",
+      "subQuestions": [
+        {
+          "id": 1,
+          "component": "input",
+          "type": "likert",
+          "category": "PA",
+          "name": "PA3",
+          "text":
+            "I reminisce about the past versus being excited about the future",
+          "reversed": "true",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 2,
+          "component": "input",
+          "type": "likert",
+          "category": "PR",
+          "name": "PR2",
+          "text":
+            "I accept responsibility for both the good and bad outcomes of my work",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 3,
+          "component": "input",
+          "type": "likert",
+          "category": "PR",
+          "name": "PR3",
+          "text":
+            "I put the same amount of effort into my work, even if I know others won't see the final product",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        },
+        {
+          "id": 4,
+          "component": "input",
+          "type": "likert",
+          "category": "TW",
+          "name": "TW3",
+          "text": "I am respectful of others' opinions when working in a team",
+          "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "component": "instructions",
+      "name": "Instructions 4",
+      "instructions": [
+        {
+          "id": 1,
+          "text": "Whew! Nice work!"
+        },
+        {
+          "id": 2,
+          "text":
+            "Next up, we’ll present you with a work scenario and a group of accompanying statements."
+        },
+        {
+          "id": 3,
+          "text": "You’ll need to rank those statements by how strongly you would agree or disagree with them when thinking of yourself as a leader."
+        },
+        {
+          "id": 4,
+          "text": "The statement at the top should be what you most believe in, and the one at the bottom the least"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "component": "drag-and-drop",
+      "type": "drag-and-drop",
+      "name": "Leadership",
+      "text":
+        "You are the manager of a team of eight employees who generally work well together. You have been supervising the team for the last 18 months.",
+      "options": [
+        {
+          "id": 1,
+          "category": "LP",
+          "text":
+            "People are competent and will do what they should if left alone"
+        },
+        {
+          "id": 2,
+          "category": "LP",
+          "text": "Effective leaders give orders and clarify procedures"
+        },
+        {
+          "id": 3,
+          "category": "LP",
+          "text": "It is fair to say most employees put in a lack of effort"
+        },
+        {
+          "id": 4,
+          "category": "LP",
+          "text":
+            "As a rule, employees should be given rewards or punishments to motivate them to meet objectives"
+        },
+        {
+          "id": 5,
+          "category": "LP",
+          "text":
+            "Leaders need to help subordinates accept responsibility for completing their work"
+        },
+        {
+          "id": 6,
+          "category": "LP",
+          "text": "I empower my team members to share their thoughts and ideas"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "component": "instructions",
+      "name": "Instructions 6",
+      "instructions": [
+        {
+          "id": 1,
+          "text": "You're doing great! You're almost done."
+        },
+        {
+          "id": 2,
+          "text":
+            "The next section is very important. It's all about learning what makes you tick!"
+        },
+        {
+          "id": 3,
+          "text":
+            "First, in the passions section you can tell us all about the activities that motivate and inspire you. Things you 'jump out of bed' for!"
+        },
+        {
+          "id": 4,
+          "text":
+            "After that, we'll present you with a list of core values and ask you to select those that are most important to you. When your personal values align with a company's culture...that's when magic happens!"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "component": "combined",
+      "name": "Passion",
+      "text":
+        "Tell us what you're most passionate about. These can be things like social causes, challenging projects, mentoring, technology, etc. Feel free to tell us about three.",
+      "video": "fire",
+      "subQuestions": [
+        {
+          "id": 1,
+          "component": "input",
+          "type": "text",
+          "name": "1",
+          "validate": "max_length",
+          "validate_args": [140],
+          "invalid_message": "Please enter 140 characters or less",
+          "required": "true",
+          "requiredMessage": "Please tell us a personal passion."
+        },
+        {
+          "id": 2,
+          "component": "input",
+          "type": "text",
+          "name": "2",
+          "validate": "max_length",
+          "validate_args": [140],
+          "invalid_message": "Please enter 140 characters or less"
+        },
+        {
+          "id": 3,
+          "component": "input",
+          "type": "text",
+          "name": "3",
+          "validate": "max_length",
+          "validate_args": [140],
+          "invalid_message": "Please enter 140 characters or less"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "component": "input",
+      "type": "checkbox",
+      "section": "Values",
+      "autoContinue": "false",
+      "name": "PersonalValues",
+      "text":
+        "Your Core Values create a firm guide on your path to a meaningful career. We provided a list of 40 values; please select the top 20 that mean the most you. After that we’ll ask you to narrow down your choices to your 10 most important.",
+      "validate": "select_range",
+      "validate_args": [20, 20],
+      "invalid_message": "Please select exactly 20 values.",
+      "options": [
+        "Courage",
+        "Achievement",
+        "Being the best",
+        "Enthusiasm",
+        "Mediation",
+        "Control",
+        "Caution",
+        "Learning",
+        "Effectiveness",
+        "Competence",
+        "Compassion",
+        "Respect",
+        "Creativity",
+        "Perseverance",
+        "Community",
+        "Trust",
+        "Adaptability",
+        "Initiative",
+        "Teamwork",
+        "Ethics",
+        "Self-Discipline",
+        "Excellence",
+        "Ambition",
+        "Clarity",
+        "Mentorship",
+        "Generosity",
+        "Growth",
+        "Commitment",
+        "Fulfillment",
+        "Accountability",
+        "Being Liked",
+        "Impact",
+        "Vision",
+        "Caring",
+        "Reliability",
+        "Rewards",
+        "Integrity",
+        "Fairness",
+        "Independence",
+        "Leadership"
+      ]
+    },
+    {
+      "id": 18,
+      "component": "input",
+      "type": "checkbox",
+      "name": "CoreValues",
+      "button": "Done",
+      "autoContinue": "false",
+      "text":
+        "Great choices! Now narrow down to the top 10 that mean the most to you:",
+      "options_source": "17",
+      "validate": "select_range",
+      "validate_args": [10, 10],
+      "invalid_message": "Please select exactly 10 values."
+    }
+  ]
+}

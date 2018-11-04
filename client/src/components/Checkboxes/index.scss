@@ -1,0 +1,121 @@
+@import '../../_mixins';
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  width: 95%;
+}
+
+.checkboxes-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.checkboxes-container {
+  width: 95%;
+  padding-bottom: 15px;
+  :nth-child(even) .checkbox-text-unchecked {
+    background: #ccc;
+    color: #4A4A4A;
+  }
+  :nth-child(odd) .checkbox-text-unchecked {
+    background: #fff;
+    color: #4A4A4A;
+  }
+}
+
+
+.question {
+  .checkbox {
+    display: inline-block;
+    input {
+      border: 0 !important;
+      clip: rect(0 0 0 0) !important;
+      height: 1px !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      padding: 0 !important;
+      position: absolute !important;
+      width: 1px !important;
+    }
+    .checkbox-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 48px;
+      width: 160px;
+      cursor: pointer;
+      font-size: 20px;
+      line-height: 20px;
+      margin: 0 auto;
+      &:hover {
+        box-shadow: 0 0 10px #fff;
+        -moz-transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01);
+        transition: all .4s;
+      }
+    }
+    .checkbox-text-checked {
+      color: #fff;
+      background: #75CC43;
+    }
+  }
+}
+.checkbox-messages {
+  @include flexbox(column, center);
+  width: 100%;
+  padding: 10px;
+  .checkbox-notification {
+    display: block;
+    color: #333;
+    width: 100%;
+    margin-bottom: 0 10px;
+    font-size: 20px;
+  }
+  .checkbox-error {
+    display: block;
+    padding: 10px;
+    background-color: #d80017;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .checkbox-text {
+    font-size: 24px;
+    line-height: 26px;
+    display: inline-block;
+  }
+  .checkboxes-wrapper {
+    flex-direction: row;
+  }
+}
+
+.card-tall {
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .checkboxes {
+    .checkboxes-wrapper {
+      width: 100%;
+      .checkbox-messages {
+        width: 65px;
+        position: initial;
+        top: 10px;
+        right: 20px;
+      }
+      .checkboxes-container {
+        width: 200px;
+      }
+    }
+  }
+}

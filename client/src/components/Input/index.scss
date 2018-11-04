@@ -1,0 +1,21 @@
+.question {
+  label {
+    color: #333;
+    font-size: 24px;
+    margin: 10px 10px 24px;
+  }
+  input {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #979797;
+    border-radius: 5px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Hind', sans-serif;
+    padding: 24px 16px;
+    width: 100%;
+    width: 280px;
+    height: 50px;
+    margin: 15px 0 0;
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../mixins';
+
+.thank-you {
+  min-height: 100vh;
+  @include flexbox(column, center);
+  .thank-you-text {
+    width: 94%;
+    margin: 10px;
+    color: #333;
+    text-align: center;
+    p {
+      margin: 5px 0;
+    }
+    h1 {
+      margin: 15px 0 30px;
+    }
+    a {
+      color: #18dbcb;
+      &:hover {
+        color: #1dc4b6;
+      }
+      &:active {
+        color: #2ac3aa;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .thank-you {
+    .thank-you-text {
+      margin: 40px 0;
+      width: 80%;
+    }
+  }
+}

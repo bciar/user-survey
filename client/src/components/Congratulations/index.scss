@@ -1,0 +1,59 @@
+@import '../../mixins';
+
+.congratulations {
+  min-height: 100vh;
+  @include flexbox(column, center);
+  .congratulations-text {
+    width: 94%;
+    margin: 10px;
+    color: #333;
+    text-align: center;
+    p {
+      margin: 40px 0;
+    }
+    p:first {
+      margin-top: 5px;
+    }
+    p:last {
+      margin-top: 5px;
+    }
+    h1 {
+      margin: 15px 0 30px;
+    }
+    a {
+      color: #18dbcb;
+      &:hover {
+        color: #1dc4b6;
+      }
+      &:active {
+        color: #2ac3aa;
+      }
+    }
+  }
+}
+
+.congratulations-button-wrapper {
+  @include flexbox(row, center);
+  button {
+    margin: 20px;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .congratulations {
+    .congratulations-text {
+      margin: 40px 0;
+      width: 80%;
+
+      p {
+        margin: 40px 0;
+      }
+      p:first {
+        margin-top: 5px;
+      }
+      p:last {
+        margin-top: 5px;
+      }
+    }
+  }
+}

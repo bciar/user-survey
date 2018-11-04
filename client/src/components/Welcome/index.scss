@@ -1,0 +1,68 @@
+@import '../../mixins';
+.welcome {
+  @include flexbox(column, center);
+  padding-bottom: 20px;
+  .welcome-logo {
+    width: 50%;
+    margin-bottom: auto;
+  }
+  .welcome-main-section {
+    max-width: 100%;
+    @include flexbox(column, center);
+    padding: 30px 0 0;
+    .welcome-content-wrapper {
+      @include flexbox(column, center);
+      margin-bottom: 20px;
+      .welcome-text {
+        text-align: left;
+        p {
+          font-size: 16px;
+          line-height: 22px;
+          margin: 10px 0 0 0;
+          color: #333;
+        }
+        .welcome-text-note {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+      .welcome-video {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .welcome {
+    .welcome-main-section {
+      padding: 0 0 40px;
+      .welcome-logo {
+        width: 30%;
+      }
+      .welcome-content-wrapper {
+        @include flexbox(row, flex-start);
+        .welcome-text {
+          margin: 0 25px;
+          width: 50%;
+          .start-button {
+            padding-top: 20px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-main-section {
+    padding: 15px!important;
+    .welcome-content-wrapper {
+      .welcome-video {
+        padding: 30px 0px!important;
+        width: 100%!important;
+      }
+    }
+  }
+}
